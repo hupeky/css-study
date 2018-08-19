@@ -1,0 +1,87 @@
+.flex {
+    display:flex;
+}
+
+.navAll {
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    padding:0;
+    min-height: 70px;   
+    width:100%;
+}
+
+.navAll li {
+
+    display:flex;  /* made the child also a flex container to give control of flex items */
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    box-sizing: border-box;
+    background-color: #12459e;
+    outline: 1px solid #fff;
+    list-style: none;
+    max-width:700px;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding:10px;
+  }
+
+
+
+/* ********** various navs ****************** */
+
+.nav1 {
+    justify-content: flex-start; /* essential for ie11 if using margin:auto; */
+}
+  .nav1 li.pushed {
+    margin-left: auto;
+  }
+/* ********** 2 ****************** */
+  .nav2 li:first-child {
+    width:100%
+  }
+
+/* ********** 3 ****************** */
+.nav3 {
+    justify-content: space-between;
+}
+/* ********** 4 ****************** */
+.nav4 {
+    justify-content: flex-end;
+}
+/* ********** 5 ****************** */
+.nav5 {
+    justify-content: flex-start;
+    align-items: flex-start
+}
+/* ********** 6 ****************** */
+.nav6 {
+    align-items: center
+}
+/* ********** 7 ****************** */
+.nav7 {
+    justify-content: flex-end;
+
+    align-items: center
+}
+
+.nav7 .active {
+    background-color: red;
+    font-size: 20px;
+    height:50px;
+}
+
+.nav7 .myDiv {
+    border: solid 5px green;
+    box-sizing: border-box;  
+    display:flex;  
+    align-items: center;
+    justify-content: center;
+    width:30%;
+    max-width:150px;
+}

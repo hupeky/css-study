@@ -1,0 +1,72 @@
+h2 + p {
+    font-weight:bold;
+} /* targets first p after h2*/
+
+h2 ~ p {
+    font-weight:bold;
+} /* targets all ps following h2*/
+
+div > p {
+    font-weight:bold;
+} /* targets children nested ps following h2 but only first level of children*/
+
+abbr[title] { /* title is a standard attrtibuite */
+    border-bottom: 1px solid red;
+    text-decoration: none
+  }
+
+  abbr[myattrib] { /* title is a standard attrtibuite */
+    border-bottom: 1px solid purple;
+    text-decoration: none
+  }
+
+  img[src$="3d-text-effect.jpg"] {
+      width:100px;
+      height:auto
+  }
+
+  /*
+    a[href^="http:"] // match content at beginning of attribut
+    img[src$=".jpg"]// match content at end of attribut
+    a[href*="/about/"] match some part in between
+    a[rel∼=next] To match a value in a space-separated list of strings (such as values in rel attributes), use a ­tilde-character (∼).
+
+  */
+.chapter::before {
+    content: '”';
+    font-size: 15em;
+    float:left;
+    margin-top: 0.45em;
+    line-height: 0.0em;
+}
+.chapter {
+    overflow:hidden
+}
+.chapter p::first-letter {
+    float: left;
+    font-size: 3em;
+    margin-top: -0.15em;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    text-align:top;
+
+}
+
+.nthChild p:nth-child(2) { /* targets just third */
+    color:red;
+}
+
+.nthChild p:nth-child(2n) { /* targets every 2nd  */
+    border-bottom: 1px solid red;
+}
+
+.nthChild p:nth-child(-n+3) { /* targets first 3  */
+    margin-left:20px
+}
+
+.nthChild p:nth-child(-n+3)::first-letter { /* combines nth selector first letter  */
+    color:green
+}
+
+.nthChildOfType p:nth-of-type(2n) {
+    color: red
+}

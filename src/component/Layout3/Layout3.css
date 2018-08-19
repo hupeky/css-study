@@ -1,0 +1,20 @@
+.mediaBlock {
+    background-color: gray;
+    border: solid 1px black;
+  }
+  .mediaFig {
+    float: left;
+    width: 30%; /* leaves 70% for the text */
+    background-color: burlywood
+  }
+  .mediaBody {
+    float: right;
+    width: 65%;
+    background-color: rgb(228, 211, 189)
+  }
+
+  .mediaBlock, .mediaBody {
+    overflow: auto;
+  }
+
+

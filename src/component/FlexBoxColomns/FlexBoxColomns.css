@@ -1,0 +1,80 @@
+.flex {
+    display:flex;
+}
+
+.flexWrap {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+
+.boxAll {
+    display:flex;
+    flex-direction:column;
+    background-color: blue;
+    height: 20vh;   
+    width:40vw;
+    padding:0;
+    
+}
+
+.boxAll li {
+    display:flex;  /* made the child also a flex container to give control of flex items */
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+    background-color: #12459e;
+    outline: 1px solid #fff;
+    list-style: none;
+    max-width:700px;
+}
+
+.boxAll li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding:10px;
+}
+
+
+/* ********** 2 ****************** */
+.box2 li {
+      margin:auto;
+}
+/* ********** 3 ****************** */
+.box3 {
+    flex-wrap:wrap;
+    height: 200px;
+    align-items:flex-start;
+}
+
+.box3 li {
+    height:100px
+}
+
+/* ********** 4 ****************** */
+.box4 {
+    flex-wrap:wrap;
+    height: 200px;
+    align-items:stretch;
+}
+
+.box4 li {
+    height:100px
+}
+
+/* ********** 5 ****************** */
+.box5 {
+    width:400px;
+    height:300px;
+    flex-wrap:wrap;
+    flex-direction:row;
+    align-items:flex-start;
+
+
+    
+}
+
+.box5 li {
+    }
